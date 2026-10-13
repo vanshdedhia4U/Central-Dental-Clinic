@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Central Dental Clinic & Hospital | Dental Implants & OPG Centre Kalyan</title>
+    <meta name="description" content="Premier Dental Implants & OPG Centre led by Dr. Mahesh S. Deokar in Kalyan West. Advanced implantology, digital OPG, patient booking system, and clinic schedule management." />
+    <meta property="og:title" content="Central Dental Clinic & Hospital | Dental Implants & OPG Centre Kalyan" />
+    <meta property="og:description" content="Premier Dental Implants & OPG Centre led by Dr. Mahesh S. Deokar in Kalyan West. Advanced implantology, digital OPG, patient booking system, and clinic schedule management." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="./assets/app.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/app.css">
+  </head>
+  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-teal-600 selection:text-white">
+    <div id="root"></div>
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var root = document.getElementById('root');
+          if (!root || root.children.length === 0) {
+            if (!document.getElementById('fallback-style')) {
+              var link = document.createElement('link');
+              link.id = 'fallback-style';
+              link.rel = 'stylesheet';
+              link.href = './assets/app.css';
+              document.head.appendChild(link);
+            }
+            if (!document.getElementById('fallback-script')) {
+              var s = document.createElement('script');
+              s.id = 'fallback-script';
+              s.type = 'module';
+              s.src = './assets/app.js';
+              document.body.appendChild(s);
+            }
+          }
+        }, 100);
+      });
+    </script>
+  </body>
+</html>
+

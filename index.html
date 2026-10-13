@@ -16,6 +16,29 @@
   <body class="bg-slate-50 text-slate-800 antialiased selection:bg-teal-600 selection:text-white">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var root = document.getElementById('root');
+          if (!root || root.children.length === 0) {
+            if (!document.getElementById('fallback-style')) {
+              var link = document.createElement('link');
+              link.id = 'fallback-style';
+              link.rel = 'stylesheet';
+              link.href = './assets/app.css';
+              document.head.appendChild(link);
+            }
+            if (!document.getElementById('fallback-script')) {
+              var s = document.createElement('script');
+              s.id = 'fallback-script';
+              s.type = 'module';
+              s.src = './assets/app.js';
+              document.body.appendChild(s);
+            }
+          }
+        }, 100);
+      });
+    </script>
   </body>
 </html>
 
