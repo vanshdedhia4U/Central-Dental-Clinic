@@ -1,0 +1,6 @@
+{
+  "name": "Central Dental Clinic & Hospital Kalyan",
+  "description": "Premier Dental Implants & OPG Centre led by Dr. Mahesh S. Deokar in Kalyan West. Advanced implantology, digital OPG, patient booking system, and clinic schedule management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
